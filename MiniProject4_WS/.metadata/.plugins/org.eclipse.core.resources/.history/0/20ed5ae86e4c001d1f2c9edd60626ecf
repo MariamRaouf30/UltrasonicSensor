@@ -1,0 +1,17 @@
+/*
+ * ultrasonic.c
+ *
+ *  Created on: Oct 15, 2022
+ *      Author: dell
+ */
+
+#include "ultrasonic.h"
+#include "gpio.h"
+#include "icu.h"
+
+
+void Ultrasonic_init(void){
+	GPIO_setupPinDirection(ULTRASONIC_TRIGGER_PORT_ID,ULTRASONIC_TRIGGER_PIN_ID,PIN_OUTPUT);	//Trigger
+	GPIO_setupPinDirection(ULTRASONIC_ECHO_PORT_ID,ULTRASONIC_ECHO_PIN_ID,PIN_INPUT);
+
+}

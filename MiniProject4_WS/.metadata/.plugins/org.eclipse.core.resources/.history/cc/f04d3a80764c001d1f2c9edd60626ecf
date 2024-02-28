@@ -1,0 +1,13 @@
+/*
+ * Main.c
+ *
+ *  Created on: Oct 15, 2022
+ *      Author: dell
+ */
+
+#include "ultrasonic.h"
+
+
+int main(void){
+	Ultrasonic_init();
+}

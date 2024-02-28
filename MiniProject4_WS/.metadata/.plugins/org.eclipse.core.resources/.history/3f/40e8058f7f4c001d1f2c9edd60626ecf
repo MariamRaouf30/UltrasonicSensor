@@ -1,0 +1,23 @@
+/*
+ * Main.c
+ *
+ *  Created on: Oct 15, 2022
+ *      Author: dell
+ */
+
+#include "ultrasonic.h"
+#include "lcd.h"
+
+
+int main(void){
+	Ultrasonic_init();
+	LCD_init();
+	LCD_displayString("Distance=    cm");
+	uint16 distance = 0;
+	while(1)
+		{
+		distance = Ultrasonic_readDistance();
+		LCD_moveCursor(0,10);
+		LCD_intgerToString(distance);
+		}
+}

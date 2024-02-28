@@ -1,0 +1,29 @@
+/*
+ * Main.c
+ *
+ *  Created on: Oct 15, 2022
+ *      Author: dell
+ */
+
+#include "ultrasonic.h"
+#include "lcd.h"
+
+
+int main(void){
+	Ultrasonic_init();
+	LCD_init();
+	LCD_displayStringRowColumn(3,0,"Distance=    cm");
+	while(1)
+		{
+//			if(g_edgeCount == 4)
+//			{
+//				Icu_DeInit(); /* Disable ICU Driver */
+//				g_edgeCount = 0;
+//				LCD_displayString("Period = ");
+//				/* calculate the period */
+//				period = ((g_timePeriodPlusHigh - g_timeHigh) / 1000);
+//				/* display the period on LCD screen */
+//				LCD_intgerToString(period);
+//				LCD_displayString(" MiliS");
+			}
+}

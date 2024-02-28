@@ -1,0 +1,23 @@
+/*
+ * ultrasonic.h
+ *
+ *  Created on: Oct 15, 2022
+ *      Author: dell
+ */
+
+#ifndef ULTRASONIC_H_
+#define ULTRASONIC_H_
+
+#include "std_types.h"
+
+#define ULTRASONIC_TRIGGER_PORT_ID		PORTB_ID
+
+#define ULTRASONIC_TRIGGER_PIN_ID		PIN5_ID
+
+
+#define ULTRASONIC_ECHO_PORT_ID			PORTD_ID
+#define ULTRASONIC_ECHO_PIN_ID			PIN6_ID
+
+
+
+#endif /* ULTRASONIC_H_ */
